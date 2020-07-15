@@ -1,0 +1,19 @@
+<script>
+//EXERCICI 4
+var name_arr = ["S","H","E","I","L","A"];
+var surname_arr = ["M","A","R","I","S","C","A","L"];
+var num = 0;
+var fullName = new Map();
+for (var i = num; i < name_arr.length; i++) {
+	var letter = name_arr[i];
+	fullName.set(i, letter);
+	num = i;
+}
+fullName.set(num+1, ' ');
+for (var i = 0; i < surname_arr.length; i++) {
+	var letter = surname_arr[i];
+	fullName.set(num+2, letter);
+	num += 1;
+}
+console.log(fullName);
+</script>

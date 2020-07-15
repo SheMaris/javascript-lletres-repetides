@@ -1,0 +1,15 @@
+<script>
+//Exercici 2
+var name_arr = ["S","H","E","I","L","A","0"];
+for (var i = 0; i < name_arr.length; i++) {
+    var letter = name_arr[i];
+    //console.log(name_arr[i]);
+    if (/[AEIOU]/.test(letter)){
+      console.log('He trobat la VOCAL: '+letter);
+    } else if (/[QWRTYPSDFGHJKLÑÇZXCVBNM]/.test(letter)) {
+      console.log('He trobat la CONSONANT: '+letter);
+    } else if (/[0123456789]/.test(letter)) {
+      console.log('Els noms de persones no contenen el número: '+letter)
+    }
+}
+</script>

@@ -1,0 +1,14 @@
+<script>
+//EXERCICI 3
+var name_arr = ["S","H","E","I","L","A"];
+var name_n_letters = new Map();
+for (var i = 0; i < name_arr.length; i++) {
+	var letter = name_arr[i];
+	var n = 1;
+	if (name_n_letters.has(letter)) {
+		n += name_n_letters.get(letter);
+	}
+	name_n_letters.set(letter, n); 
+}
+console.log(name_n_letters);
+</script>
